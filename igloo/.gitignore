@@ -3,3 +3,4 @@
 *.gcno
 rectangle_test
 coverage/**
+coverage.*
