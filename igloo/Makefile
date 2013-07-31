@@ -1,4 +1,3 @@
-
 CC = gcc
 CXX = g++
 AR = ar
@@ -10,7 +9,7 @@ CFLAGS += -O2
 CXXFLAGS += -O2
 LDFLAGS +=
 
-CXXFLAGS += -I.
+CXXFLAGS += -I. -Ivendor/igloo
 
 all: compile test clean
 
