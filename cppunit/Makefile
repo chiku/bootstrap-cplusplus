@@ -42,7 +42,4 @@ rectangle_test.o: rectangle_test.cpp rectangle.h
 
 rectangle.o: rectangle.cpp rectangle.h
 
-%.o: %.cpp
-	${CXX} -c -o $@ $< ${CXXFLAGS}
-
 .PHONY: clean generate.coverage.report
