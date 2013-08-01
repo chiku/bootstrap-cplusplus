@@ -38,7 +38,7 @@ test_runner: rectangle_test.o rectangle.o test_runner.o
 
 test_runner.o: test_runner.cpp
 
-rectangle_test.o: rectangle_test.cpp rectangle.cpp rectangle.h
+rectangle_test.o: rectangle_test.cpp rectangle.h
 
 rectangle.o: rectangle.cpp rectangle.h
 
