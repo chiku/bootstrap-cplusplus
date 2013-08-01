@@ -7,7 +7,7 @@ GENHTML = genhtml
 
 CFLAGS += -O2
 CXXFLAGS += -O2
-LDFLAGS += -lgtest
+LDFLAGS += -lgtest -lgtest_main
 
 CXXFLAGS += -I.
 
