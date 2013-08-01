@@ -3,7 +3,6 @@ compiler:
   - gcc
 script:
   - sudo apt-get install libcppunit-dev libboost-test-dev
-  - cd C++
   - cd igloo
   - make clean compile test
   - cd ../cppunit
