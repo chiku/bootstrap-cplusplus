@@ -11,7 +11,7 @@ LDFLAGS +=
 
 CXXFLAGS += -I. -Ivendor/igloo
 
-all: compile test clean
+all: release
 
 compile: test_runner
 

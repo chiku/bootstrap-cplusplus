@@ -11,7 +11,7 @@ LDFLAGS += -lcppunit
 
 CXXFLAGS += -I.
 
-all: compile test clean
+all: release
 
 compile: test_runner
 
