@@ -13,13 +13,13 @@ CXXFLAGS += -I. -Ivendor/igloo
 
 all: compile test clean
 
-compile: rectangle_test
+compile: test_runner
 
 test: compile
-	./rectangle_test
+	./test_runner
 
 release: compile test
-	${STRIP} rectangle_test
+	${STRIP} test_runner
 
 coverage: CXXFLAGS += --coverage
 coverage: LDFLAGS += --coverage
@@ -31,12 +31,14 @@ generate.coverage.report:
 	${GENHTML} coverage.filtered.info --output-directory coverage
 
 clean:
-	rm -rf *.o rectangle_test *.info *.gcda *.gcno coverage*
+	rm -rf *.o test_runner *.info *.gcda *.gcno coverage*
 
-rectangle_test: rectangle_test.o rectangle.o
-	${CXX} -o rectangle_test *.o ${LDFLAGS}
+test_runner: rectangle_test.o rectangle.o test_runner.o
+	${CXX} -o test_runner rectangle.o *_test.o test_runner.o ${LDFLAGS}
 
-rectangle_test.o: rectangle_test.cpp rectangle.cpp rectangle.h
+test_runner.o: test_runner.cpp
+
+rectangle_test.o: rectangle_test.cpp rectangle.h
 
 rectangle.o: rectangle.cpp rectangle.h
 

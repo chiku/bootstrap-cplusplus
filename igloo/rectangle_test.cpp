@@ -48,8 +48,3 @@ Describe(shape_Rectangle)
     }
   };
 };
-
-int main()
-{
-  return igloo::TestRunner::RunAllTests();
-}

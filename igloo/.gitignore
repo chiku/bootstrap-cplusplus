@@ -1,6 +1,6 @@
 *.o
 *.gcda
 *.gcno
-rectangle_test
+test_runner
 coverage/**
 coverage.*
