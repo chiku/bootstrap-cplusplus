@@ -10,7 +10,7 @@ namespace shape
     double _width;
 
   public:
-    Rectangle(double height, double width);
+    Rectangle(double width, double height);
 
     double area() const;
     double perimeter() const;

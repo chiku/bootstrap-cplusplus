@@ -1,6 +1,6 @@
 #include <rectangle.h>
 
-shape::Rectangle::Rectangle(double height, double width)
+shape::Rectangle::Rectangle(double width, double height)
 {
   _width = width;
   _height = height;
