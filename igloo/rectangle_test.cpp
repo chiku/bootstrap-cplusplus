@@ -1,5 +1,6 @@
-#include <igloo/igloo_alt.h>
-#include <rectangle.h>
+#include "igloo/igloo_alt.h"
+
+#include "rectangle.h"
 
 using namespace igloo;
 using namespace shape;
