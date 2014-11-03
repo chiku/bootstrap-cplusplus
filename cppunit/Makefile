@@ -42,4 +42,4 @@ rectangle_test.o: rectangle_test.cpp rectangle.h
 
 rectangle.o: rectangle.cpp rectangle.h
 
-.PHONY: clean generate.coverage.report
+.PHONY: all compile release coverage generate.coverage.report clean
