@@ -7,7 +7,7 @@ using namespace shape;
 
 Describe(shape_Rectangle)
 {
-  Describe(with_height_1_and_width_1)
+  Describe(with_width_1_and_height_1)
   {
     It(has_area_1)
     {
@@ -28,7 +28,7 @@ Describe(shape_Rectangle)
     }
   };
 
-  Describe(with_height_2_and_width_3)
+  Describe(with_width_2_and_height_3)
   {
     It(has_area_6)
     {
