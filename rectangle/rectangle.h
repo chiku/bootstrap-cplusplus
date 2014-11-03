@@ -5,16 +5,16 @@ namespace shape
 {
   class Rectangle
   {
-  private:
-    double _height;
-    double _width;
-
   public:
     Rectangle(double width, double height);
 
     double area() const;
     double perimeter() const;
     bool isSquare() const;
+
+  private:
+    double height_;
+    double width_;
   };
 }
 

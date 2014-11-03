@@ -1,22 +1,18 @@
-#include <rectangle.h>
+#include "rectangle.h"
 
-shape::Rectangle::Rectangle(double width, double height)
-{
-  _width = width;
-  _height = height;
-}
+shape::Rectangle::Rectangle(double width, double height) : width_(width), height_(height) { }
 
 double shape::Rectangle::area() const
 {
-  return _width * _height;
+  return width_ * height_;
 }
 
 double shape::Rectangle::perimeter() const
 {
-  return 2 * (_width + _height);
+  return 2 * (width_ + height_);
 }
 
 bool shape::Rectangle::isSquare() const
 {
-  return _width == _height;
+  return width_ == height_;
 }
