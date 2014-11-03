@@ -4,3 +4,4 @@
 test_runner
 coverage/**
 coverage.*
+vendor/gtest-1.7.0/build
