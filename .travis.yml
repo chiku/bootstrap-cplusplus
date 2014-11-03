@@ -9,3 +9,5 @@ script:
   - make clean compile test
   - cd ../boost.test
   - make clean compile test
+  - cd ../catch
+  - make clean compile test
