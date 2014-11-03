@@ -1,5 +1,5 @@
-#ifndef __RECTANGLE_H__
-#define __RECTANGLE_H__
+#ifndef RECTANGLE_H_
+#define RECTANGLE_H_
 
 namespace shape
 {
