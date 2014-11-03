@@ -14,7 +14,7 @@ Describe(shape_Rectangle)
       Assert::That(rectangle.area(), Equals(1.0));
     }
 
-    It(has_perimeter_1)
+    It(has_perimeter_4)
     {
       Rectangle rectangle(1.0, 1.0);
       Assert::That(rectangle.perimeter(), Equals(4.0));
